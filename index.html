@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header class="bg-dark text-white py-4">
         <div class="container">
             <h1 class="text-center">Tabai Iyadh</h1>
@@ -39,7 +40,7 @@
             </nav>
         </div>
     </header>
-
+<span id="cv-section">
     <section id="about" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">About Me</h2>
@@ -112,9 +113,10 @@
             </div>
         </div>
     </section>
-
+</span>
     <footer class="bg-dark text-white py-4">
         <div class="container">
+            <button id="download-btn" class="btn btn-primary">Download CV as PDF</button>
             <p class="text-center">&copy; 2024 Tabai Iyadh</p>
         </div>
     </footer>
@@ -123,5 +125,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script>
+        document.getElementById("download-btn").addEventListener("click", function () {
+          var element = document.getElementById("cv-section");
+          var opt = {
+            margin: 0.5,
+            filename: 'cv.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'cm', format: 'A4', orientation: 'portrait' }
+          };
+          html2pdf().from(element).set(opt).save();
+        });
+      </script>
 </body>
 </html>
