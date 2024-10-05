@@ -5,79 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Software Engineer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white py-4">
         <div class="container">
-            <h1>John Doe</h1>
-            <p>Software Engineer</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <h1 class="text-center">Tabai Iyadh</h1>
+            <p class="text-center">Software Engineer</p>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="py-5">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a passionate software engineer with a love for coding and problem-solving. My expertise includes Git, Linux, C++, Java, and much more. I aim to build efficient and scalable solutions.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Git</li>
-                <li>Linux</li>
-                <li>C++</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>HTML & CSS</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1: Git Automation Tool</h3>
-                <p>A tool that automates common Git tasks using Bash scripts and Python.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2: Linux System Monitor</h3>
-                <p>A C++ application that monitors system processes and resources in real-time.</p>
-            </div>
-            <div class="project">
-                <h3>Project 3: Java Web Application</h3>
-                <p>A web app built with Java and Spring Boot for task management.</p>
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p>I am a passionate software engineer with a love for coding and problem-solving. My expertise includes Git, Linux, C++, Java, and much more. I aim to build efficient and scalable solutions.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="skills" class="bg-light py-5">
         <div class="container">
-            <h2>Contact</h2>
-            <p>If you would like to work with me, feel free to reach out!</p>
-            <ul>
-                <li>Email: john.doe@example.com</li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></li>
-            </ul>
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row text-center">
+                <div class="col-sm-4 col-md-3 mb-3">Git</div>
+                <div class="col-sm-4 col-md-3 mb-3">Linux</div>
+                <div class="col-sm-4 col-md-3 mb-3">C++</div>
+                <div class="col-sm-4 col-md-3 mb-3">Java</div>
+                <div class="col-sm-4 col-md-3 mb-3">Python</div>
+                <div class="col-sm-4 col-md-3 mb-3">JavaScript</div>
+                <div class="col-sm-4 col-md-3 mb-3">HTML & CSS</div>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <section id="projects" class="py-5">
         <div class="container">
-            <p>&copy; 2024 Tabai Iyadh</p>
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Git Automation Tool</h3>
+                            <p class="card-text">A tool that automates common Git tasks using Bash scripts and Python.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Linux System Monitor</h3>
+                            <p class="card-text">A C++ application that monitors system processes and resources in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Java Web Application</h3>
+                            <p class="card-text">A web app built with Java and Spring Boot for task management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p class="text-center">If you would like to work with me, feel free to reach out!</p>
+                    <ul class="list-unstyled text-center">
+                        <li>Email: tabaiiyadh317@gmail.com</li>
+                        <li>LinkedIn: <a href="https://linkedin.com/in/tabaiiyadh" target="_blank">linkedin.com/in/tabaiiyadh</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <p class="text-center">&copy; 2024 Tabai Iyadh</p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
